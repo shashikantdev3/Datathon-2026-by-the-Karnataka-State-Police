@@ -1,0 +1,6 @@
+{
+  "command": "streamlit run app/app.py --server.port $X_ZOHO_CATALYST_LISTEN_PORT --server.address 0.0.0.0 --server.headless true",
+  "stack": "python3.9",
+  "name": "crimesense-web",
+  "memory": 512
+}

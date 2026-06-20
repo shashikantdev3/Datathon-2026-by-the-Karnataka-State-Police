@@ -1,0 +1,23 @@
+{
+  "project_name": "crimesense",
+  "comment": "Catalyst by Zoho project manifest for CrimeSense by DevWithData (KSP Datathon 2026)",
+  "deployment": {
+    "appsail": {
+      "name": "crimesense-web",
+      "stack": "python3.9",
+      "command": "streamlit run app/app.py --server.port $X_ZOHO_CATALYST_LISTEN_PORT --server.address 0.0.0.0 --server.headless true",
+      "memory": 512,
+      "env": {
+        "CRIMESENSE_DB": "data/crimesense.db"
+      }
+    }
+  },
+  "catalyst_services": [
+    "AppSail (Python serverless web hosting)",
+    "Data Store (Serverless relational DB / OLAP for crime records)",
+    "Catalyst Functions (NL-query microservice, PDF export)",
+    "QuickML (no-code ML pipeline for crime forecasting & risk scoring)",
+    "Authentication & Role-based Access (investigator / analyst / supervisor / policymaker)",
+    "Stratus / File Store (conversation-history PDF storage)"
+  ]
+}
