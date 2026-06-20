@@ -1,0 +1,10 @@
+.git
+__pycache__
+*.pyc
+.venv
+venv
+assets/qa
+*.pptx
+docs/*.py
+.streamlit/secrets.toml
+.catalyst
